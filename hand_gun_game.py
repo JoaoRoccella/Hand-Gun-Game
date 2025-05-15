@@ -12,7 +12,7 @@ cap.set(cv2.CAP_PROP_FRAME_HEIGHT, altura)
 
 # Configurações do MediaPipe
 mp_hands = mp.solutions.hands
-hands = mp_hands.Hands(max_num_hands=1)  # Detecta apenas uma mão para simplificar
+hands = mp_hands.Hands(max_num_hands=2)  # Detecta apenas uma mão para simplificar
 mp_draw = mp.solutions.drawing_utils
 
 # ===== Configurações do Jogo =====
@@ -89,6 +89,7 @@ def detectar_gestos(landmarks):
 # ===== Loop Principal do Jogo =====
 while True:
     ret, frame = cap.read()
+    frame = cv2.flip(frame, 1)  # Espelha a imagem para simular o espelho
     if not ret:
         break
     
