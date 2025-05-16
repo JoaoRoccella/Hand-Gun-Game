@@ -1,4 +1,5 @@
 absl-py==2.2.2
+altgraph==0.17.4
 attrs==25.3.0
 cffi==1.17.1
 contourpy==1.3.2
@@ -16,12 +17,17 @@ opencv-contrib-python==4.11.0.86
 opencv-python==4.11.0.86
 opt_einsum==3.4.0
 packaging==25.0
+pefile==2023.2.7
 pillow==11.2.1
 protobuf==4.25.7
 pycparser==2.22
+pyinstaller==6.13.0
+pyinstaller-hooks-contrib==2025.4
 pyparsing==3.2.3
 python-dateutil==2.9.0.post0
+pywin32-ctypes==0.2.3
 scipy==1.15.3
 sentencepiece==0.2.0
+setuptools==80.7.1
 six==1.17.0
 sounddevice==0.5.1
